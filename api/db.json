@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Complete react Class Component",
+      "status": "pending"
+    },
+    {
+      "id": 2,
+      "title": "Instagram Project",
+      "status": "completed"
+    },
+    {
+      "title": "Coffee kabo",
+      "status": "pending",
+      "id": 4
+    },
+    {
+      "title": "cha kabo na",
+      "status": "cancel",
+      "id": 5
+    },
+    {
+      "title": "ekhon amra kabo",
+      "status": "completed",
+      "id": 6
+    }
+  ]
+}
