@@ -1,28 +1,9 @@
-import { Component } from "react";
+import { Component, PureComponent } from "react";
+import IncDec from "../../hoc/IncDec";
 
-class Counter extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      counter: 0,
-      error: "",
-    };
-  }
-  handleIncr = () => {
-    this.setState((prevState) => ({
-      ...prevState,
-      counter: prevState.counter + 1,
-    }));
-  };
-
-  handleDec = () => {
-    this.setState((prevState) => ({
-      ...prevState,
-      counter: prevState.counter - 1,
-    }));
-  };
+class Counter extends PureComponent {
   render() {
-    const { counter } = this.state;
+    const { counter, handleIncr, handleDec } = this.props;
     return (
       <div className="container my-5">
         <div className="row justify-content-center">
@@ -32,14 +13,14 @@ class Counter extends Component {
                 <h1 style={{ fontSize: "200px" }}>{counter}</h1>
                 <hr />
                 <button
-                  onClick={this.handleIncr}
+                  onClick={handleIncr}
                   className="btn btn-primary
                 "
                 >
                   +++
                 </button>
                 &nbsp;
-                <button onClick={this.handleDec} className="btn btn-danger">
+                <button onClick={handleDec} className="btn btn-danger">
                   ---
                 </button>
               </div>
@@ -51,4 +32,4 @@ class Counter extends Component {
   }
 }
 
-export default Counter;
+export default IncDec(Counter, 50);

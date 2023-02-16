@@ -1,0 +1,26 @@
+.preview-img {
+  position: relative;
+  border: 10px solid #ffffff;
+  margin: 10px 0px;
+
+  &:hover {
+    button {
+      display: block;
+    }
+  }
+
+  img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+  }
+  button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 0px;
+    border-radius: 50%;
+    background-color: rgba(242, 242, 242, 0.9);
+    display: none;
+  }
+}
