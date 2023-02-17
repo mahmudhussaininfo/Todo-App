@@ -10,11 +10,12 @@ import Home from "./Pages/Home/Home";
 import View from "./Components/View/View";
 import User from "./Components/User/User";
 import TodoMine from "./Components/TodoMine/TodoMine";
+import ImageUpload from "./Pages/ImageUpload/ImageUpload";
 
 function App() {
   return (
     <>
-      <TodoMine />
+      <ImageUpload />
     </>
   );
 }
